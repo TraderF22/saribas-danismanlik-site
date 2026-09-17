@@ -21,7 +21,7 @@ import {
 import SEOHead from '@/components/SEOHead';
 
 // 2026 Resmî Rakamları ve Parametreleri (ÇSGB & UİGM Resmî Tebliğleri)
-const DEFAULT_BRUT_ASGARI_UCRET = 26005.50; // 2026 tahmini brüt asgari ücret (TL)
+const DEFAULT_BRUT_ASGARI_UCRET = 33030.00; // 2026 brüt asgari ücret (TL)
 const DEGERLI_KAGIT_BEDELI_2026 = 964.00; // 2026 Resmî Değerli Kâğıt Bedeli
 
 const HARCLAR_2026 = {
@@ -412,7 +412,7 @@ const CalismaIzniHesaplamaPage = () => {
                         <div className="flex items-center justify-between">
                           <span className="font-semibold text-sm text-slate-900">{meslek.unvan}</span>
                           <span className="text-xs font-bold px-2.5 py-0.5 rounded-full bg-amber-100 text-amber-800">
-                            {meslek.katsayi}x Asgari Ücret
+                            {meslek.katsayi === 1.0 ? 'Asgari Ücret' : `${meslek.katsayi} Katı Asgari Ücret`}
                           </span>
                         </div>
                         <p className="text-xs text-slate-500 mt-1">{meslek.aciklama}</p>
@@ -523,11 +523,16 @@ const CalismaIzniHesaplamaPage = () => {
                     </div>
                   </div>
 
-                  {/* Toplam Kart */}
-                  <div className="bg-[#1e3a5f] text-white p-4 rounded-xl text-center mb-6">
-                    <div className="text-xs text-blue-200">1. Yıl Tahmini Toplam Bütçe (Maaş + SGK + Harç)</div>
-                    <div className="text-2xl font-black mt-1 text-amber-300">
-                      {maliyetHesabi.yillikToplamMaliyet.toLocaleString('tr-TR', { maximumFractionDigits: 0 })} TL
+                  {/* Aylık Maliyet Kartı */}
+                  <div className="bg-[#1e3a5f] text-white p-5 rounded-xl text-center mb-6 shadow-md">
+                    <div className="text-xs font-semibold uppercase tracking-wider text-blue-200">
+                      Aylık Toplam İşveren Maliyeti
+                    </div>
+                    <div className="text-3xl font-black mt-1 text-amber-300">
+                      {maliyetHesabi.toplamAylikIsverenMaliyeti.toLocaleString('tr-TR', { minimumFractionDigits: 2, maximumFractionDigits: 2 })} TL
+                    </div>
+                    <div className="text-[11px] text-blue-200 mt-1">
+                      (Brüt Maaş + SGK İşveren Payı Dahil)
                     </div>
                   </div>
 
