@@ -92,17 +92,30 @@ const CalismaIzniHesaplamaPage = () => {
   // --- SSS AKORDİYON STATE ---
   const [activeFaq, setActiveFaq] = useState(null);
 
-  // MALİYET HESAPLAMALARI
+  // MALİYET HESAPLAMALARI (Resmî Bordro ve Vergi Mevzuatı)
   const maliyetHesabi = useMemo(() => {
     const meslek = MESLEK_KATSAYILARI.find(m => m.id === secilenMeslek) || MESLEK_KATSAYILARI[0];
     const zorunluBrutMaas = brutAsgariUcret * meslek.katsayi;
     
-    // SGK İşveren Payı (~%22.5 standart işveren hissesi + işsizlik)
-    const sgkIsverenMaliyeti = zorunluBrutMaas * 0.225;
+    // SGK İşveren Payı (%16.75 SSK İşveren + %2 İşsizlik İşveren = %18.75)
+    // 33.030 TL için: 5.532,52 + 660,60 = 6.193,13 TL
+    const sgkIsverenMaliyeti = zorunluBrutMaas * 0.1875;
     const toplamAylikIsverenMaliyeti = zorunluBrutMaas + sgkIsverenMaliyeti;
     
-    // Tahmini Net Maaş (~%71.5 civarı net ele geçen)
-    const tahminiNetMaas = zorunluBrutMaas * 0.715;
+    // Net Maaş Hesabı:
+    // SGK İşçi Payı (%14 SSK + %1 İşsizlik = %15)
+    const sgkIsciKesintisi = zorunluBrutMaas * 0.15;
+    const vergiMatrahi = zorunluBrutMaas - sgkIsciKesintisi;
+    
+    // Asgari Ücret Gelir ve Damga Vergisi İstisnası (2026 Resmî)
+    // Asgari ücret seviyesinde vergi kesilmez, tam 28.075,50 TL kalır.
+    const asgariUcretVergiMatrahi = brutAsgariUcret * 0.85; // 28.075,50 TL
+    const asanMatrah = Math.max(0, vergiMatrahi - asgariUcretVergiMatrahi);
+    const asanGelirVergisi = asanMatrah * 0.15; // Aşan tutar için %15 gelir vergisi
+    const asanDamgaVergisi = Math.max(0, zorunluBrutMaas - brutAsgariUcret) * 0.00759;
+    
+    // Net Ele Geçen Maaş (Katsayı 1.0 için tam 28.075,50 TL)
+    const tahminiNetMaas = zorunluBrutMaas - sgkIsciKesintisi - asanGelirVergisi - asanDamgaVergisi;
 
     // Resmî Harçlar
     const harcTutari = secilenSure === 'gecici_koruma' 
@@ -110,9 +123,6 @@ const CalismaIzniHesaplamaPage = () => {
       : (HARCLAR_2026[secilenSure] || HARCLAR_2026[1]);
     const kartBedeli = DEGERLI_KAGIT_BEDELI_2026;
     const toplamBakanlikOdemesi = harcTutari + kartBedeli;
-
-    // Yıllık Toplam Maliyet (Aylık maaş x 12 + Harçlar)
-    const yillikToplamMaliyet = (toplamAylikIsverenMaliyeti * 12) + toplamBakanlikOdemesi;
 
     return {
       meslek,
@@ -122,8 +132,7 @@ const CalismaIzniHesaplamaPage = () => {
       toplamAylikIsverenMaliyeti,
       harcTutari,
       kartBedeli,
-      toplamBakanlikOdemesi,
-      yillikToplamMaliyet
+      toplamBakanlikOdemesi
     };
   }, [secilenMeslek, secilenSure, brutAsgariUcret]);
 
@@ -481,16 +490,16 @@ const CalismaIzniHesaplamaPage = () => {
                     </div>
 
                     <div className="flex justify-between items-center text-sm">
-                      <span className="text-slate-600">Tahmini Net Maaş:</span>
-                      <span className="font-medium text-slate-700">
-                        ~{maliyetHesabi.tahminiNetMaas.toLocaleString('tr-TR', { minimumFractionDigits: 2 })} TL
+                      <span className="text-slate-600">Çalışanın Net Maaşı:</span>
+                      <span className="font-bold text-slate-900">
+                        {maliyetHesabi.tahminiNetMaas.toLocaleString('tr-TR', { minimumFractionDigits: 2 })} TL
                       </span>
                     </div>
 
                     <div className="flex justify-between items-center text-sm">
-                      <span className="text-slate-600">Aylık SGK İşveren Payı:</span>
+                      <span className="text-slate-600">Aylık SGK İşveren Primi:</span>
                       <span className="font-medium text-slate-700">
-                        ~{maliyetHesabi.sgkIsverenMaliyeti.toLocaleString('tr-TR', { minimumFractionDigits: 2 })} TL
+                        {maliyetHesabi.sgkIsverenMaliyeti.toLocaleString('tr-TR', { minimumFractionDigits: 2 })} TL
                       </span>
                     </div>
 
