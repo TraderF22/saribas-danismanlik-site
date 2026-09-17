@@ -7,7 +7,6 @@ import {
   CheckCircle2, 
   AlertCircle, 
   HelpCircle, 
-  Phone, 
   MessageCircle, 
   FileText, 
   Briefcase, 
@@ -252,7 +251,7 @@ const CalismaIzniHesaplamaPage = () => {
     }
   }, [activeTab, maliyetHesabi, secilenSure, calisanStatu, turkCalisanSayisi, yabanciSayisi, hayvancilikHesabi, hayvanSayisi]);
 
-  const whatsappUrl = `https://wa.me/905548743308?text=${encodeURIComponent(whatsappMesaji)}`;
+  const whatsappUrl = `https://wa.me/905419552375?text=${encodeURIComponent(whatsappMesaji)}`;
 
   const faqItems = [
     {
@@ -537,7 +536,7 @@ const CalismaIzniHesaplamaPage = () => {
                   </div>
 
                   {/* CTA Butonları */}
-                  <div className="space-y-2.5">
+                  <div>
                     <a
                       href={whatsappUrl}
                       target="_blank"
@@ -546,14 +545,6 @@ const CalismaIzniHesaplamaPage = () => {
                     >
                       <MessageCircle className="w-5 h-5" />
                       <span>WhatsApp'tan Teklif ve Dosya Danışmanlığı Al</span>
-                    </a>
-
-                    <a
-                      href="tel:05548743308"
-                      className="w-full flex items-center justify-center space-x-2 bg-slate-100 hover:bg-slate-200 text-slate-800 font-semibold py-3 px-4 rounded-xl transition-colors text-sm"
-                    >
-                      <Phone className="w-4 h-4 text-[#1e3a5f]" />
-                      <span>Uzmanımızı Arayın: 0554 874 3308</span>
                     </a>
                   </div>
                 </div>
@@ -756,7 +747,7 @@ const CalismaIzniHesaplamaPage = () => {
                   </div>
 
                   {/* Dönüşüm / CTA */}
-                  <div className="space-y-2.5">
+                  <div>
                     <a
                       href={whatsappUrl}
                       target="_blank"
@@ -765,14 +756,6 @@ const CalismaIzniHesaplamaPage = () => {
                     >
                       <MessageCircle className="w-5 h-5" />
                       <span>Dosyanızı Ücretsiz İnceleyelim</span>
-                    </a>
-
-                    <a
-                      href="tel:05548743308"
-                      className="w-full flex items-center justify-center space-x-2 bg-slate-100 hover:bg-slate-200 text-slate-800 font-semibold py-3 px-4 rounded-xl transition-colors text-sm"
-                    >
-                      <Phone className="w-4 h-4 text-[#1e3a5f]" />
-                      <span>Manisa / Çanakkale Ofisimizle Görüşün</span>
                     </a>
                   </div>
                 </div>
@@ -897,7 +880,7 @@ const CalismaIzniHesaplamaPage = () => {
                   </div>
 
                   {/* CTA */}
-                  <div className="space-y-2.5">
+                  <div>
                     <a
                       href={whatsappUrl}
                       target="_blank"
@@ -906,14 +889,6 @@ const CalismaIzniHesaplamaPage = () => {
                     >
                       <MessageCircle className="w-5 h-5" />
                       <span>Çoban Çalışma İzni Başvurusu Yap</span>
-                    </a>
-
-                    <a
-                      href="tel:05548743308"
-                      className="w-full flex items-center justify-center space-x-2 bg-slate-100 hover:bg-slate-200 text-slate-800 font-semibold py-3 px-4 rounded-xl transition-colors text-sm"
-                    >
-                      <Phone className="w-4 h-4 text-[#1e3a5f]" />
-                      <span>Bilgi Alın: 0554 874 3308</span>
                     </a>
                   </div>
                 </div>
@@ -970,22 +945,15 @@ const CalismaIzniHesaplamaPage = () => {
             <p className="text-sm sm:text-base text-blue-100 mb-6 leading-relaxed">
               Bakanlık değerlendirme kriterleri, istisna maddeleri ve evrak hazırlığı profesyonel uzmanlık gerektirir. Hatalı başvurular 1 yıl boyunca yeniden başvuru engeline yol açabilir.
             </p>
-            <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
+            <div className="flex justify-center">
               <a
                 href={whatsappUrl}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-full sm:w-auto inline-flex items-center justify-center space-x-2 bg-emerald-500 hover:bg-emerald-600 text-white font-bold py-3.5 px-6 rounded-xl shadow-lg transition-colors text-sm"
+                className="inline-flex items-center justify-center space-x-2 bg-emerald-500 hover:bg-emerald-600 text-white font-bold py-3.5 px-8 rounded-xl shadow-lg transition-colors text-base"
               >
                 <MessageCircle className="w-5 h-5" />
                 <span>WhatsApp ile Dosyanızı İnceletin</span>
-              </a>
-              <a
-                href="tel:05548743308"
-                className="w-full sm:w-auto inline-flex items-center justify-center space-x-2 bg-white text-[#1e3a5f] hover:bg-slate-100 font-bold py-3.5 px-6 rounded-xl transition-colors text-sm"
-              >
-                <Phone className="w-4 h-4 text-[#1e3a5f]" />
-                <span>Hemen Arayın: 0554 874 3308</span>
               </a>
             </div>
           </div>
