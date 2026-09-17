@@ -45,9 +45,11 @@ const Layout = ({ children }) => {
         { name: 'Çanakkale Yabancılar ve Göç Danışmanlığı', path: '/canakkale-yabancilar-rehberi' },
         { name: 'Çanakkale Göç İdaresi Rehberi', path: '/canakkale-goc-idaresi' },
         { name: 'Çanakkale Çalışma İzni', path: '/canakkale-calisma-izni' },
-        { name: 'Manisa Çalışma İzni', path: '/manisa-calisma-izni' }
+        { name: 'Manisa Çalışma İzni', path: '/manisa-calisma-izni' },
+        { name: '2026 Çalışma İzni Maliyet Hesaplayıcı', path: '/calisma-izni-maliyet-hesaplama' }
       ]
     },
+    { name: 'Maliyet Hesapla', path: '/calisma-izni-maliyet-hesaplama' },
     { name: 'Blog', path: '/blog' },
     { name: 'İletişim', path: '/iletisim' },
   ];
