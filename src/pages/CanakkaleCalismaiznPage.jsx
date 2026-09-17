@@ -146,12 +146,47 @@ const CanakkaleCalismaiznPage = () => {
     }
   ];
 
+  const schemaData = {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Service",
+        "name": "Çanakkale Yabancı Çalışma İzni Danışmanlığı",
+        "provider": {
+          "@type": "LocalBusiness",
+          "name": "Sarıbaş Danışmanlık",
+          "telephone": "0554 874 3308",
+          "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Çanakkale",
+            "addressCountry": "TR"
+          }
+        },
+        "areaServed": "Çanakkale",
+        "description": "Çanakkale'de şirket personeli, ev hizmetleri ve tarım sektörü yabancı çalışma izni başvuru ve dosya takip danışmanlığı."
+      },
+      {
+        "@type": "FAQPage",
+        "mainEntity": faqs.map(faq => ({
+          "@type": "Question",
+          "name": faq.question,
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": faq.answer
+          }
+        }))
+      }
+    ]
+  };
+
   return (
     <>
       <SEOHead
         title="Çanakkale Çalışma İzni: 2026 Başvuru Rehberi ve Danışmanlık"
         description="Çanakkale'de yabancı çalışma izni nasıl alınır? Ev hizmetleri, tarım, turizm ve şirketler için çalışma izni başvuru şartları, gerekli belgeler ve 2026 danışmanlık ücretleri."
         keywords="Çanakkale çalışma izni, yabancı çalışma izni 2026, çalışma izni başvurusu Çanakkale, bakıcı çalışma izni, şirket çalışma izni"
+        canonicalUrl="https://saribasdanismanlik.com/canakkale-calisma-izni"
+        schema={schemaData}
       />
 
       {/* Hero Section */}

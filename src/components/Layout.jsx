@@ -42,8 +42,8 @@ const Layout = ({ children }) => {
         { name: 'Öğrenci İkamet İzni', path: '/hizmetler' },
         { name: 'Uzun Dönem İkamet İzni', path: '/hizmetler' },
         { name: 'Çalışma İzni', path: '/hizmetler' },
-        { name: 'Çanakkale Yabancılar ve Göç Danışmanlığı', path: '/canakkale-yabancilar-danismanligi' },
-        { name: 'Çanakkale Göç İdaresi Rehberi', path: '/canakkale-goc-idaresi-rehberi' },
+        { name: 'Çanakkale Yabancılar ve Göç Danışmanlığı', path: '/canakkale-yabancilar-rehberi' },
+        { name: 'Çanakkale Göç İdaresi Rehberi', path: '/canakkale-goc-idaresi' },
         { name: 'Çanakkale Çalışma İzni', path: '/canakkale-calisma-izni' },
         { name: 'Manisa Çalışma İzni', path: '/manisa-calisma-izni' }
       ]

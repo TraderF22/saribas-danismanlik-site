@@ -35,7 +35,7 @@ const HomePage = () => {
     text: "İkamet izni başvurumda büyük yardımları oldu. Kesinlikle tavsiye ederim."
   }];
   return <>
-    <SEOHead title="Çanakkale ve Manisa Yabancı Danışmanlık | İkamet & Çalışma İzni" description="Çanakkale ve Manisa ofislerimizle yabancılar için Göç İdaresi ikamet izni, çalışma izni ve Türk vatandaşlığı başvurularında profesyonel danışmanlık hizmeti sunuyoruz. Ege bölgesinde hızlı ve güvenilir süreç takibi." keywords="çanakkale göç idaresi danışmanlık, manisa çalışma izni başvurusu, çanakkale yabancı danışmanlık, izmir ikamet izni, balıkesir yabancı oturma izni, sarıbaş danışmanlık" />
+    <SEOHead title="Çanakkale ve Manisa Yabancı Danışmanlık | İkamet & Çalışma İzni" description="Çanakkale ve Manisa ofislerimizle yabancılar için Göç İdaresi ikamet izni, çalışma izni ve Türk vatandaşlığı başvurularında profesyonel danışmanlık hizmeti sunuyoruz. Ege bölgesinde hızlı ve güvenilir süreç takibi." keywords="çanakkale göç idaresi danışmanlık, manisa çalışma izni başvurusu, çanakkale yabancı danışmanlık, izmir ikamet izni, balıkesir yabancı oturma izni, sarıbaş danışmanlık" canonicalUrl="https://saribasdanismanlik.com/" />
 
     {/* Hero Section */}
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden">

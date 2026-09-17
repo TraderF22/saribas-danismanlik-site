@@ -17,6 +17,7 @@ const AboutPage = () => {
         title="Çanakkale ve Manisa Göç İdaresi Danışmanlık Uzmanı"
         description="2017'den beri Çanakkale ve Manisa'da yabancılar için ikamet izni, çalışma izni ve vatandaşlık süreçlerinde uzman danışmanlık. Evlilik dosyaları ve bakıcı izinlerinde profesyonel çözüm."
         keywords="çanakkale göç idaresi, manisa çalışma izni, yabancı danışmanlık çanakkale, sarıbaş danışmanlık, ikamet izni uzmanı"
+        canonicalUrl="https://saribasdanismanlik.com/hakkimizda"
       />
 
       {/* Hero Section */}

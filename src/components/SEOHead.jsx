@@ -1,7 +1,7 @@
 import React from 'react';
 import { Helmet } from 'react-helmet';
 
-const SEOHead = ({ title, description, keywords, canonicalUrl }) => {
+const SEOHead = ({ title, description, keywords, canonicalUrl, canonical, schema, ogImage }) => {
   const siteTitle = 'Çanakkale Yabancı Danışmanlık | İkamet ve Çalışma İzni | Sarıbaş Danışmanlık';
   const fullTitle = title ? `${title} | Sarıbaş Danışmanlık` : siteTitle;
 
@@ -9,6 +9,7 @@ const SEOHead = ({ title, description, keywords, canonicalUrl }) => {
   const finalDescription = description || defaultDescription;
 
   const defaultKeywords = "çanakkale yabancı danışmanlık, çanakkale ikamet izni, çanakkale çalışma izni, manisa yabancı danışmanlık, izmir göç danışmanlık, sarıbaş danışmanlık";
+  const finalCanonical = canonicalUrl || canonical;
 
   return (
     <Helmet htmlAttributes={{ lang: 'tr' }}>
@@ -18,8 +19,14 @@ const SEOHead = ({ title, description, keywords, canonicalUrl }) => {
       <meta property="og:title" content={fullTitle} />
       <meta property="og:description" content={finalDescription} />
       <meta property="og:type" content="website" />
+      {ogImage && <meta property="og:image" content={ogImage} />}
       <meta name="robots" content="index, follow" />
-      {canonicalUrl && <link rel="canonical" href={canonicalUrl} />}
+      {finalCanonical && <link rel="canonical" href={finalCanonical} />}
+      {schema && (
+        <script type="application/ld+json">
+          {JSON.stringify(schema)}
+        </script>
+      )}
     </Helmet>
   );
 };

@@ -39,50 +39,65 @@ const CanakkaleGocIdaresiPage = () => {
     "Çanakkale ve çevre ilçeler için yerel tecrübe"
   ];
 
+  const schemaData = {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "LocalBusiness",
+        "name": "Sarıbaş Danışmanlık - Çanakkale Ofisi",
+        "description": "Çanakkale İl Göç İdaresi işlemlerinde uzman danışmanlık rehberi. İkamet izni, yabancı evlilik ve randevu desteği.",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Çanakkale",
+          "addressRegion": "Marmara",
+          "addressCountry": "TR"
+        },
+        "telephone": "0554 874 3308",
+        "url": "https://saribasdanismanlik.com/canakkale-goc-idaresi",
+        "hasOfferCatalog": {
+          "@type": "OfferCatalog",
+          "name": "Göç İdaresi Danışmanlık Hizmetleri",
+          "itemListElement": [
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "İkamet İzni Dosya Hazırlığı"
+              }
+            },
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "Yabancı Evlilik Danışmanlığı"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "@type": "FAQPage",
+        "mainEntity": faqs.map(faq => ({
+          "@type": "Question",
+          "name": faq.question,
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": faq.answer
+          }
+        }))
+      }
+    ]
+  };
+
   return (
     <>
       <SEOHead
         title="Çanakkale İl Göç İdaresi Rehberi 2026 - Sarıbaş Danışmanlık"
         description="Çanakkale İl Göç İdaresi, Çanakkale ikamet izni, e-ikamet randevu ve evrak işlemleri. Biga, Çan, Ezine ve tüm ilçeler için profesyonel danışmanlık ve yabancı evlilik desteği."
         keywords="Çanakkale Göç İdaresi, İkamet izni Çanakkale, Çanakkale yabancı danışmanlık, Biga yabancı evlilik işlemleri, Göç idaresi randevu Çanakkale, Çanakkale oturma izni danışmanı"
+        canonicalUrl="https://saribasdanismanlik.com/canakkale-goc-idaresi"
+        schema={schemaData}
       />
-
-      <script type="application/ld+json">
-        {JSON.stringify({
-          "@context": "https://schema.org",
-          "@type": "LocalBusiness",
-          "name": "Sarıbaş Danışmanlık - Çanakkale Ofisi",
-          "description": "Çanakkale İl Göç İdaresi işlemlerinde uzman danışmanlık rehberi. İkamet izni, yabancı evlilik ve randevu desteği.",
-          "address": {
-            "@type": "PostalAddress",
-            "addressLocality": "Çanakkale",
-            "addressRegion": "Marmara",
-            "addressCountry": "TR"
-          },
-          "telephone": "0554 874 3308",
-          "url": "https://saribasdanismanlik.com/canakkale-goc-idaresi-rehberi",
-          "hasOfferCatalog": {
-            "@type": "OfferCatalog",
-            "name": "Göç İdaresi Danışmanlık Hizmetleri",
-            "itemListElement": [
-              {
-                "@type": "Offer",
-                "itemOffered": {
-                  "@type": "Service",
-                  "name": "İkamet İzni Dosya Hazırlığı"
-                }
-              },
-              {
-                "@type": "Offer",
-                "itemOffered": {
-                  "@type": "Service",
-                  "name": "Yabancı Evlilik Danışmanlığı"
-                }
-              }
-            ]
-          }
-        })}
-      </script>
 
       {/* 1. Hero Section */}
       <section className="relative h-screen min-h-[600px] flex items-center justify-center overflow-hidden">
@@ -206,7 +221,7 @@ const CanakkaleGocIdaresiPage = () => {
                 <Link to="/iletisim" className="text-orange-700 font-semibold hover:text-orange-900 hover:underline inline-flex items-center gap-1">
                   Doğru başvuru için bize danışın →
                 </Link>
-                <Link to="/canakkale-yabancilar-danismanligi" className="text-orange-700 font-semibold hover:text-orange-900 hover:underline inline-flex items-center gap-1">
+                <Link to="/canakkale-yabancilar-rehberi" className="text-orange-700 font-semibold hover:text-orange-900 hover:underline inline-flex items-center gap-1">
                   Yabancılara verdiğimiz hizmetler için Çanakkale Yabancılar ve Göç Danışmanlığı sayfamızı ziyaret edin →
                 </Link>
               </div>

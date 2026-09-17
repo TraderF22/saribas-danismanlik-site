@@ -62,12 +62,27 @@ const CanakkaleYabancilarPage = () => {
     }
   ];
 
+  const schemaData = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": faqs.map(faq => ({
+      "@type": "Question",
+      "name": faq.question,
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": faq.answer
+      }
+    }))
+  };
+
   return (
     <>
       <SEOHead
-        title="Sarıbaş Danışmanlık | Çanakkale İkamet İzni ve Çalışma İzni Danışmanlığı"
+        title="Çanakkale Yabancılar Rehberi 2026: İkamet & Çalışma İzni"
         description="Çanakkale'de ikamet izni ve çalışma izni başvuruları için danışmanlık hizmeti sunuyoruz. Göç İdaresi randevu, evrak hazırlığı ve başvuru takibi süreçlerinde destek veriyoruz."
         keywords="Çanakkale ikamet izni, Çanakkale çalışma izni, Çanakkale göç idaresi randevu, Çanakkale yabancı danışmanlık, Çanakkale oturma izni"
+        canonicalUrl="https://saribasdanismanlik.com/canakkale-yabancilar-rehberi"
+        schema={schemaData}
       />
 
       {/* Hero Section */}

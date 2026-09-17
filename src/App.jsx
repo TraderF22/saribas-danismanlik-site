@@ -24,8 +24,8 @@ function App() {
           <Route path="/hizmetler" element={<ServicesPage />} />
           <Route path="/iletisim" element={<ContactPage />} />
           <Route path="/blog" element={<BlogPage />} />
-          <Route path="/blog/:slug" element={<BlogPostPage />} />
           <Route path="/blog/il-degisikligi-calisma-izni" element={<BlogPostPage_IlDegisikligi />} />
+          <Route path="/blog/:slug" element={<BlogPostPage />} />
           <Route path="/canakkale-goc-idaresi" element={<CanakkaleGocIdaresiPage />} />
           <Route path="/canakkale-yabancilar-rehberi" element={<CanakkaleYabancilarPage />} />
           <Route path="/canakkale-calisma-izni" element={<CanakkaleCalismaiznPage />} />

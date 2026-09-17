@@ -37,6 +37,7 @@ const ContactPage = () => {
         title="Çanakkale & Manisa İletişim | Sarıbaş Danışmanlık"
         description="Çanakkale Kepez ve Manisa ofislerimizde göç danışmanlığı, ikamet izni ve çalışma izni süreçleriniz için profesyonel destek alın. Hemen randevu oluşturun."
         keywords="çanakkale göç danışmanlığı, kepez yabancı danışmanlık, manisa ikamet izni iletişim, sarıbaş danışmanlık adres"
+        canonicalUrl="https://saribasdanismanlik.com/iletisim"
       />
 
       {/* Hero Section */}

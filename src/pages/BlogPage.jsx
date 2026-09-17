@@ -65,6 +65,7 @@ const BlogPage = () => {
       <SEOHead 
         title="Blog - Yabancılar Mevzuatı ve Çalışma İzni Rehberi | Sarıbaş Danışmanlık"
         description="Manisa ve Çanakkale başta olmak üzere Türkiye'deki yabancılar mevzuatı, çalışma izni süreçleri ve ikamet izni hakkında güncel bilgiler."
+        canonicalUrl="https://saribasdanismanlik.com/blog"
       />
 
       <div className="pt-20">

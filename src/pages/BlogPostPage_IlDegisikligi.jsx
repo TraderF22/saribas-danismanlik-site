@@ -37,6 +37,7 @@ const BlogPostPage_IlDegisikligi = () => {
       <SEOHead 
         title="İnsani İkamet, Uluslararası Koruma ve Geçici Koruma: Farklı Şehirde Çalışabilir mi?"
         description="Hatay'da kayıtlı geçici koruma sahibi Manisa, Çanakkale veya İzmir'de çalışabilir mi? 7 iş günü kuralı, il kotası ve yasal prosedürler."
+        canonicalUrl="https://saribasdanismanlik.com/blog/il-degisikligi-calisma-izni"
       />
 
       <div className="bg-slate-50 min-h-screen pt-24 pb-16">

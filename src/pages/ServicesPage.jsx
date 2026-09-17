@@ -23,7 +23,7 @@ const ServicesPage = () => {
     description: 'Yurtdışından Türkiye\'ye çalışma izni ile gelmek isteyen yabancıların çalışma izni süreçlerinde danışmanlık veriyoruz. Çanakkale ve Manisa başta olmak üzere diğer tüm şehirlerimize çalışma izni danışmanlığı vermekteyiz.'
   }];
   return <>
-      <SEOHead title="Çanakkale & Manisa İkamet ve Çalışma İzni Ofisi" description="Çanakkale ve Manisa'da Türk vatandaşı ile evlilik ikameti, bakıcı ve şirket personeli çalışma izni, Afgan ve Suriyeli çalışan izinleri ile yurt dışı çalışma danışmanlığı." keywords="çanakkale evlilik ikamet izni, hasta bakıcı çalışma izni, manisa otel çalışanı izni, afgan çoban çalışma izni, suriyeli çalışma izni çanakkale, yurt dışı çalışma izni" />
+      <SEOHead title="Çanakkale & Manisa İkamet ve Çalışma İzni Ofisi" description="Çanakkale ve Manisa'da Türk vatandaşı ile evlilik ikameti, bakıcı ve şirket personeli çalışma izni, Afgan ve Suriyeli çalışan izinleri ile yurt dışı çalışma danışmanlığı." keywords="çanakkale evlilik ikamet izni, hasta bakıcı çalışma izni, manisa otel çalışanı izni, afgan çoban çalışma izni, suriyeli çalışma izni çanakkale, yurt dışı çalışma izni" canonicalUrl="https://saribasdanismanlik.com/hizmetler" />
 
       {/* Hero Section */}
       <section className="bg-gradient-to-r from-[#1e3a5f] to-[#2d5a8f] text-white py-16">
