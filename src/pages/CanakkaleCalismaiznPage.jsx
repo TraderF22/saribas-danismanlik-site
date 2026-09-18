@@ -19,6 +19,7 @@ import {
 } from 'lucide-react';
 import SEOHead from '@/components/SEOHead';
 import WhatsAppButton from '@/components/WhatsAppButton';
+import CalculatorBanner from '@/components/CalculatorBanner';
 
 const CanakkaleCalismaiznPage = () => {
   const [activeAccordion, setActiveAccordion] = useState(null);
@@ -320,6 +321,9 @@ const CanakkaleCalismaiznPage = () => {
           </div>
         </div>
       </section>
+
+      {/* 2026 Hesaplayıcı Banner */}
+      <CalculatorBanner cityName="Çanakkale" />
 
       {/* Required Documents Section */}
       <section className="py-20 bg-white">

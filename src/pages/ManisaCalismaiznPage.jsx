@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Briefcase, Users, Baby, Tractor, Hotel, Building2, Globe2, FileText, CheckCircle2, AlertTriangle, Phone, ChevronDown, ChevronUp, HelpCircle, FileCheck, Factory } from 'lucide-react';
 import SEOHead from '@/components/SEOHead';
+import CalculatorBanner from '@/components/CalculatorBanner';
 const ManisaCalismaiznPage = () => {
   const [activeAccordion, setActiveAccordion] = useState(null);
   const toggleAccordion = index => {
@@ -272,6 +273,9 @@ const ManisaCalismaiznPage = () => {
           </div>
         </div>
       </section>
+
+      {/* 2026 Hesaplayıcı Banner */}
+      <CalculatorBanner cityName="Manisa" />
 
       {/* Required Documents Section */}
       <section className="py-20 bg-white">

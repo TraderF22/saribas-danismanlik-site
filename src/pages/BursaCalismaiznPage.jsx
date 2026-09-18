@@ -20,6 +20,7 @@ import {
   Scissors
 } from 'lucide-react';
 import SEOHead from '@/components/SEOHead';
+import CalculatorBanner from '@/components/CalculatorBanner';
 
 const BursaCalismaiznPage = () => {
   const [activeAccordion, setActiveAccordion] = useState(null);
@@ -377,6 +378,9 @@ const BursaCalismaiznPage = () => {
           </div>
         </div>
       </section>
+
+      {/* 2026 Hesaplayıcı Banner */}
+      <CalculatorBanner cityName="Bursa" />
 
       {/* Required Documents Section */}
       <section className="py-20 bg-white">

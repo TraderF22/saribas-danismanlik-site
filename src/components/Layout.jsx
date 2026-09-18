@@ -37,10 +37,7 @@ const Layout = ({ children }) => {
       name: 'Hizmetler',
       path: '/hizmetler',
       dropdown: [
-        { name: 'Kısa Dönem İkamet İzni', path: '/hizmetler' },
-        { name: 'Aile İkamet İzni', path: '/hizmetler' },
-        { name: 'Öğrenci İkamet İzni', path: '/hizmetler' },
-        { name: 'Uzun Dönem İkamet İzni', path: '/hizmetler' },
+        { name: 'Oturma / İkamet İzni', path: '/hizmetler' },
         { name: 'Çalışma İzni', path: '/hizmetler' },
         { name: 'Çanakkale Yabancılar ve Göç Danışmanlığı', path: '/canakkale-yabancilar-rehberi' },
         { name: 'Çanakkale Göç İdaresi Rehberi', path: '/canakkale-goc-idaresi' },

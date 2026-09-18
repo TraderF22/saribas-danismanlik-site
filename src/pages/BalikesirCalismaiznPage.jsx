@@ -19,6 +19,7 @@ import {
   Compass
 } from 'lucide-react';
 import SEOHead from '@/components/SEOHead';
+import CalculatorBanner from '@/components/CalculatorBanner';
 
 const BalikesirCalismaiznPage = () => {
   const [activeAccordion, setActiveAccordion] = useState(null);
@@ -378,6 +379,9 @@ const BalikesirCalismaiznPage = () => {
           </div>
         </div>
       </section>
+
+      {/* 2026 Hesaplayıcı Banner */}
+      <CalculatorBanner cityName="Balıkesir" />
 
       {/* Required Documents Section */}
       <section className="py-20 bg-white">

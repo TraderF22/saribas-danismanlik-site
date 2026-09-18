@@ -1,8 +1,9 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
-import { CheckCircle, Users, FileText, Award, Star } from 'lucide-react';
+import { CheckCircle, Users, FileText, Award, Star, Calculator } from 'lucide-react';
 import SEOHead from '@/components/SEOHead';
+import CalculatorBanner from '@/components/CalculatorBanner';
 const HomePage = () => {
   const features = [{
     icon: <CheckCircle className="w-12 h-12 text-[#1e3a5f]" />,
@@ -73,11 +74,15 @@ const HomePage = () => {
 
         <p className="text-lg md:text-xl mb-10 text-gray-100 max-w-2xl mx-auto drop-shadow-md font-medium">Çanakkale ve Manisa merkezli uzman kadromuzla; tüm Marmara ve Ege bölgesinde ikamet izni ve çalışma izni  süreçlerinde profesyonel destek sağlıyoruz.</p>
 
-        <div className="flex flex-col sm:flex-row gap-5 justify-center">
-          <Link to="/hizmetler" className="bg-white text-[#1e3a5f] px-8 py-4 rounded-lg font-bold hover:bg-gray-100 transition-all duration-300 shadow-xl hover:shadow-2xl transform hover:-translate-y-1">
+        <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+          <Link to="/hizmetler" className="w-full sm:w-auto bg-white text-[#1e3a5f] px-8 py-4 rounded-xl font-bold hover:bg-gray-100 transition-all duration-300 shadow-xl hover:shadow-2xl transform hover:-translate-y-1 text-center">
             Hizmetlerimizi Keşfedin
           </Link>
-          <Link to="/iletisim" className="bg-transparent border-2 border-white text-white px-8 py-4 rounded-lg font-bold hover:bg-white hover:text-[#1e3a5f] transition-all duration-300 shadow-xl hover:shadow-2xl transform hover:-translate-y-1 backdrop-blur-sm">
+          <Link to="/calisma-izni-maliyet-hesaplama" className="w-full sm:w-auto bg-gradient-to-r from-emerald-500 to-teal-600 hover:from-emerald-600 hover:to-teal-700 text-white px-8 py-4 rounded-xl font-bold transition-all duration-300 shadow-[0_0_30px_rgba(16,185,129,0.4)] hover:shadow-[0_0_40px_rgba(16,185,129,0.6)] transform hover:-translate-y-1 flex items-center justify-center gap-2.5 border border-emerald-400/30 text-center">
+            <Calculator className="w-5 h-5" />
+            2026 Maliyet Hesaplayıcı
+          </Link>
+          <Link to="/iletisim" className="w-full sm:w-auto bg-transparent border-2 border-white text-white px-8 py-4 rounded-xl font-bold hover:bg-white hover:text-[#1e3a5f] transition-all duration-300 shadow-xl hover:shadow-2xl transform hover:-translate-y-1 backdrop-blur-sm text-center">
             Bize Ulaşın
           </Link>
         </div>
@@ -143,11 +148,14 @@ const HomePage = () => {
           delay: 0.4
         }} className="mt-16 bg-[#f8fafc] p-8 rounded-2xl text-center shadow-inner">
           <p className="text-gray-700 max-w-4xl mx-auto leading-relaxed text-lg">
-            Çanakkale ve Manisa'daki ofislerimize ek olarak <span className="font-semibold text-[#1e3a5f]">Balıkesir ve İzmir</span>'de ikamet eden yabancılara online danışmanlık sağlıyoruz. İkamet izni, çalışma izni, aile ikamet izni ve evlilik sonrası ikamet izni başvurularında süreç takibi yapıyoruz.
+            Çanakkale ve Manisa'daki ofislerimize ek olarak <span className="font-semibold text-[#1e3a5f]">Balıkesir, Bursa ve İzmir</span> genelinde ikamet eden yabancılara ve işletmelere profesyonel danışmanlık sağlıyoruz. İkamet izni, çalışma izni, aile ikamet izni ve evlilik sonrası ikamet izni başvurularında resmi süreç takibi yapıyoruz.
           </p>
         </motion.div>
       </div>
     </section>
+
+    {/* 2026 Hesaplayıcı Özel Bölümü */}
+    <CalculatorBanner />
 
     {/* Reviews Section */}
     <section className="py-20 bg-gray-50">
