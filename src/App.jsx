@@ -12,6 +12,8 @@ import CanakkaleGocIdaresiPage from '@/pages/CanakkaleGocIdaresiPage';
 import CanakkaleYabancilarPage from '@/pages/CanakkaleYabancilarPage';
 import CanakkaleCalismaiznPage from '@/pages/CanakkaleCalismaiznPage';
 import ManisaCalismaiznPage from '@/pages/ManisaCalismaiznPage';
+import BalikesirCalismaiznPage from '@/pages/BalikesirCalismaiznPage';
+import BursaCalismaiznPage from '@/pages/BursaCalismaiznPage';
 import CalismaIzniHesaplamaPage from '@/pages/CalismaIzniHesaplamaPage';
 import { Toaster } from "@/components/ui/toaster";
 
@@ -31,6 +33,8 @@ function App() {
           <Route path="/canakkale-yabancilar-rehberi" element={<CanakkaleYabancilarPage />} />
           <Route path="/canakkale-calisma-izni" element={<CanakkaleCalismaiznPage />} />
           <Route path="/manisa-calisma-izni" element={<ManisaCalismaiznPage />} />
+          <Route path="/balikesir-calisma-izni" element={<BalikesirCalismaiznPage />} />
+          <Route path="/bursa-calisma-izni" element={<BursaCalismaiznPage />} />
           <Route path="/calisma-izni-maliyet-hesaplama" element={<CalismaIzniHesaplamaPage />} />
         </Routes>
       </Layout>

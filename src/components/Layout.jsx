@@ -46,6 +46,8 @@ const Layout = ({ children }) => {
         { name: 'Çanakkale Göç İdaresi Rehberi', path: '/canakkale-goc-idaresi' },
         { name: 'Çanakkale Çalışma İzni', path: '/canakkale-calisma-izni' },
         { name: 'Manisa Çalışma İzni', path: '/manisa-calisma-izni' },
+        { name: 'Balıkesir Çalışma İzni', path: '/balikesir-calisma-izni' },
+        { name: 'Bursa Çalışma İzni', path: '/bursa-calisma-izni' },
         { name: '2026 Çalışma İzni Maliyet Hesaplayıcı', path: '/calisma-izni-maliyet-hesaplama' }
       ]
     },
