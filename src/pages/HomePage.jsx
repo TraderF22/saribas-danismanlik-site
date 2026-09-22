@@ -36,7 +36,7 @@ const HomePage = () => {
     text: "İkamet izni başvurumda büyük yardımları oldu. Kesinlikle tavsiye ederim."
   }];
   return <>
-    <SEOHead title="Çanakkale ve Manisa Yabancı Danışmanlık | İkamet & Çalışma İzni" description="Çanakkale ve Manisa ofislerimizle yabancılar için Göç İdaresi ikamet izni, çalışma izni ve Türk vatandaşlığı başvurularında profesyonel danışmanlık hizmeti sunuyoruz. Ege bölgesinde hızlı ve güvenilir süreç takibi." keywords="çanakkale göç idaresi danışmanlık, manisa çalışma izni başvurusu, çanakkale yabancı danışmanlık, izmir ikamet izni, balıkesir yabancı oturma izni, sarıbaş danışmanlık" canonicalUrl="https://saribasdanismanlik.com/" />
+    <SEOHead title="İzmir, Manisa, Çanakkale & Balıkesir Yabancı Danışmanlık | İkamet & Çalışma İzni" description="İzmir, Manisa, Çanakkale ve Balıkesir'de Göç İdaresi ikamet izni, yabancı çalışma izni, yurtdışından işçi getirme ve Türk vatandaşlığı başvurularında profesyonel danışmanlık hizmeti sunuyoruz. Ege ve Marmara bölgesinde hızlı süreç takibi." keywords="izmir çalışma izni, manisa göç idaresi, balıkesir ikamet izni, çanakkale yabancı danışmanlık, yurtdışı çalışma izni, sarıbaş danışmanlık" canonicalUrl="https://saribasdanismanlik.com/" />
 
     {/* Hero Section */}
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
@@ -67,12 +67,12 @@ const HomePage = () => {
         duration: 0.8
       }} className="relative z-10 text-center text-white px-4 max-w-5xl pt-20">
         <h1 className="text-4xl md:text-6xl font-bold mb-6 leading-tight drop-shadow-lg tracking-tight">
-          Çanakkale ve Manisa <br />
-          Göç İdaresi & Çalışma İzni <br />
+          İzmir, Manisa, Çanakkale & Balıkesir <br />
+          Göç İdaresi, İkamet & Çalışma İzni <br />
           Danışmanlık Merkezi
         </h1>
 
-        <p className="text-lg md:text-xl mb-10 text-gray-100 max-w-2xl mx-auto drop-shadow-md font-medium">Çanakkale ve Manisa merkezli uzman kadromuzla; tüm Marmara ve Ege bölgesinde ikamet izni ve çalışma izni  süreçlerinde profesyonel destek sağlıyoruz.</p>
+        <p className="text-lg md:text-xl mb-10 text-gray-100 max-w-3xl mx-auto drop-shadow-md font-medium">İzmir, Manisa, Çanakkale ve Balıkesir başta olmak üzere tüm Ege ve Marmara bölgesinde ikamet izni, yabancı çalışma izni ve yurtdışından işçi getirme süreçlerinde profesyonel destek sağlıyoruz.</p>
 
         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
           <Link to="/hizmetler" className="w-full sm:w-auto bg-white text-[#1e3a5f] px-8 py-4 rounded-xl font-bold hover:bg-gray-100 transition-all duration-300 shadow-xl hover:shadow-2xl transform hover:-translate-y-1 text-center">
@@ -147,9 +147,20 @@ const HomePage = () => {
           duration: 0.6,
           delay: 0.4
         }} className="mt-16 bg-[#f8fafc] p-8 rounded-2xl text-center shadow-inner">
-          <p className="text-gray-700 max-w-4xl mx-auto leading-relaxed text-lg">
-            Çanakkale ve Manisa'daki ofislerimize ek olarak <span className="font-semibold text-[#1e3a5f]">Balıkesir, Bursa ve İzmir</span> genelinde ikamet eden yabancılara ve işletmelere profesyonel danışmanlık sağlıyoruz. İkamet izni, çalışma izni, aile ikamet izni ve evlilik sonrası ikamet izni başvurularında resmi süreç takibi yapıyoruz.
+          <p className="text-gray-700 max-w-4xl mx-auto leading-relaxed text-lg mb-6">
+            <span className="font-semibold text-[#1e3a5f]">İzmir, Manisa, Balıkesir ve Çanakkale</span> genelinde ikamet eden yabancılara, şirketlere ve işletmelere profesyonel danışmanlık sağlıyoruz. İkamet izni, yabancı çalışma izni, aile ikamet izni ve yurtdışından işçi getirme başvurularında resmi süreç takibi yapıyoruz.
           </p>
+          <div className="flex flex-wrap justify-center gap-3">
+            <Link to="/izmir-calisma-izni" className="px-4 py-2 bg-white rounded-lg border border-gray-200 text-[#1e3a5f] font-semibold text-sm hover:border-blue-500 hover:text-blue-600 transition-colors shadow-sm">İzmir Çalışma İzni</Link>
+            <Link to="/izmir-goc-idaresi" className="px-4 py-2 bg-white rounded-lg border border-gray-200 text-[#1e3a5f] font-semibold text-sm hover:border-blue-500 hover:text-blue-600 transition-colors shadow-sm">İzmir Göç İdaresi</Link>
+            <Link to="/manisa-calisma-izni" className="px-4 py-2 bg-white rounded-lg border border-gray-200 text-[#1e3a5f] font-semibold text-sm hover:border-blue-500 hover:text-blue-600 transition-colors shadow-sm">Manisa Çalışma İzni</Link>
+            <Link to="/manisa-goc-idaresi" className="px-4 py-2 bg-white rounded-lg border border-gray-200 text-[#1e3a5f] font-semibold text-sm hover:border-blue-500 hover:text-blue-600 transition-colors shadow-sm">Manisa Göç İdaresi</Link>
+            <Link to="/balikesir-calisma-izni" className="px-4 py-2 bg-white rounded-lg border border-gray-200 text-[#1e3a5f] font-semibold text-sm hover:border-blue-500 hover:text-blue-600 transition-colors shadow-sm">Balıkesir Çalışma İzni</Link>
+            <Link to="/balikesir-goc-idaresi" className="px-4 py-2 bg-white rounded-lg border border-gray-200 text-[#1e3a5f] font-semibold text-sm hover:border-blue-500 hover:text-blue-600 transition-colors shadow-sm">Balıkesir Göç İdaresi</Link>
+            <Link to="/canakkale-calisma-izni" className="px-4 py-2 bg-white rounded-lg border border-gray-200 text-[#1e3a5f] font-semibold text-sm hover:border-blue-500 hover:text-blue-600 transition-colors shadow-sm">Çanakkale Çalışma İzni</Link>
+            <Link to="/canakkale-goc-idaresi" className="px-4 py-2 bg-white rounded-lg border border-gray-200 text-[#1e3a5f] font-semibold text-sm hover:border-blue-500 hover:text-blue-600 transition-colors shadow-sm">Çanakkale Göç İdaresi</Link>
+            <Link to="/yurtdisi-calisma-izni" className="px-4 py-2 bg-blue-50 rounded-lg border border-blue-200 text-blue-700 font-semibold text-sm hover:bg-blue-100 transition-colors shadow-sm">Yurtdışından İşçi Getirme</Link>
+          </div>
         </motion.div>
       </div>
     </section>

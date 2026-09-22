@@ -37,14 +37,16 @@ const Layout = ({ children }) => {
       name: 'Hizmetler',
       path: '/hizmetler',
       dropdown: [
-        { name: 'Oturma / İkamet İzni', path: '/hizmetler' },
-        { name: 'Çalışma İzni', path: '/hizmetler' },
-        { name: 'Çanakkale Yabancılar ve Göç Danışmanlığı', path: '/canakkale-yabancilar-rehberi' },
-        { name: 'Çanakkale Göç İdaresi Rehberi', path: '/canakkale-goc-idaresi' },
-        { name: 'Çanakkale Çalışma İzni', path: '/canakkale-calisma-izni' },
+        { name: 'İzmir Çalışma İzni', path: '/izmir-calisma-izni' },
+        { name: 'İzmir Göç İdaresi & İkamet', path: '/izmir-goc-idaresi' },
         { name: 'Manisa Çalışma İzni', path: '/manisa-calisma-izni' },
+        { name: 'Manisa Göç İdaresi & İkamet', path: '/manisa-goc-idaresi' },
         { name: 'Balıkesir Çalışma İzni', path: '/balikesir-calisma-izni' },
+        { name: 'Balıkesir Göç İdaresi & İkamet', path: '/balikesir-goc-idaresi' },
+        { name: 'Çanakkale Çalışma İzni', path: '/canakkale-calisma-izni' },
+        { name: 'Çanakkale Göç İdaresi Rehberi', path: '/canakkale-goc-idaresi' },
         { name: 'Bursa Çalışma İzni', path: '/bursa-calisma-izni' },
+        { name: 'Yurtdışından İşçi Getirme', path: '/yurtdisi-calisma-izni' },
         { name: '2026 Çalışma İzni Maliyet Hesaplayıcı', path: '/calisma-izni-maliyet-hesaplama' }
       ]
     },
@@ -248,8 +250,11 @@ const Layout = ({ children }) => {
             {/* Company Info */}
             <div>
               <p className="text-xl font-bold mb-4">Sarıbaş Danışmanlık</p>
-              <p className="text-gray-300 text-sm leading-relaxed">
-                2017'den beri yabancılar mevzuatı kapsamında profesyonel danışmanlık hizmeti sunuyoruz.
+              <p className="text-gray-300 text-sm leading-relaxed mb-4">
+                2017'den beri İzmir, Manisa, Balıkesir ve Çanakkale başta olmak üzere yabancılar mevzuatı, ikamet izni, yabancı çalışma izni ve yurtdışından işçi getirme süreçlerinde profesyonel danışmanlık hizmeti sunuyoruz.
+              </p>
+              <p className="text-xs text-blue-200">
+                Hizmet Bölgelerimiz: İzmir • Manisa • Balıkesir • Çanakkale • Bursa
               </p>
             </div>
 
@@ -272,10 +277,10 @@ const Layout = ({ children }) => {
 
             {/* Contact Info */}
             <div>
-              <p className="text-lg font-semibold mb-4">İletişim</p>
+              <p className="text-lg font-semibold mb-4">İletişim & Ofisler</p>
               <div className="space-y-2 text-sm text-gray-300">
-                <p>Çanakkale: 0554 874 3308</p>
-                <p>Manisa: 0541 955 2375</p>
+                <p>İzmir & Manisa: 0541 955 2375</p>
+                <p>Çanakkale & Balıkesir: 0554 874 3308</p>
                 <p>E-posta: saribas.danismanlik@gmail.com</p>
               </div>
             </div>

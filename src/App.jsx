@@ -14,6 +14,11 @@ import CanakkaleCalismaiznPage from '@/pages/CanakkaleCalismaiznPage';
 import ManisaCalismaiznPage from '@/pages/ManisaCalismaiznPage';
 import BalikesirCalismaiznPage from '@/pages/BalikesirCalismaiznPage';
 import BursaCalismaiznPage from '@/pages/BursaCalismaiznPage';
+import IzmirCalismaiznPage from '@/pages/IzmirCalismaiznPage';
+import IzmirGocIdaresiPage from '@/pages/IzmirGocIdaresiPage';
+import ManisaGocIdaresiPage from '@/pages/ManisaGocIdaresiPage';
+import BalikesirGocIdaresiPage from '@/pages/BalikesirGocIdaresiPage';
+import YurtdisiCalismaizniPage from '@/pages/YurtdisiCalismaizniPage';
 import CalismaIzniHesaplamaPage from '@/pages/CalismaIzniHesaplamaPage';
 import { Toaster } from "@/components/ui/toaster";
 
@@ -33,8 +38,13 @@ function App() {
           <Route path="/canakkale-yabancilar-rehberi" element={<CanakkaleYabancilarPage />} />
           <Route path="/canakkale-calisma-izni" element={<CanakkaleCalismaiznPage />} />
           <Route path="/manisa-calisma-izni" element={<ManisaCalismaiznPage />} />
+          <Route path="/manisa-goc-idaresi" element={<ManisaGocIdaresiPage />} />
           <Route path="/balikesir-calisma-izni" element={<BalikesirCalismaiznPage />} />
+          <Route path="/balikesir-goc-idaresi" element={<BalikesirGocIdaresiPage />} />
           <Route path="/bursa-calisma-izni" element={<BursaCalismaiznPage />} />
+          <Route path="/izmir-calisma-izni" element={<IzmirCalismaiznPage />} />
+          <Route path="/izmir-goc-idaresi" element={<IzmirGocIdaresiPage />} />
+          <Route path="/yurtdisi-calisma-izni" element={<YurtdisiCalismaizniPage />} />
           <Route path="/calisma-izni-maliyet-hesaplama" element={<CalismaIzniHesaplamaPage />} />
         </Routes>
       </Layout>

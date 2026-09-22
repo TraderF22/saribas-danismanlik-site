@@ -14,9 +14,9 @@ const AboutPage = () => {
   return (
     <>
       <SEOHead
-        title="Çanakkale ve Manisa Göç İdaresi Danışmanlık Uzmanı"
-        description="2017'den beri Çanakkale ve Manisa'da yabancılar için ikamet izni, çalışma izni ve vatandaşlık süreçlerinde uzman danışmanlık. Evlilik dosyaları ve bakıcı izinlerinde profesyonel çözüm."
-        keywords="çanakkale göç idaresi, manisa çalışma izni, yabancı danışmanlık çanakkale, sarıbaş danışmanlık, ikamet izni uzmanı"
+        title="İzmir, Manisa, Balıkesir & Çanakkale Yabancı Danışmanlık | Sarıbaş Danışmanlık"
+        description="2017'den beri İzmir, Manisa, Balıkesir ve Çanakkale'de yabancılar için ikamet izni, çalışma izni, yurtdışından işçi getirme ve vatandaşlık süreçlerinde uzman danışmanlık."
+        keywords="izmir göç danışmanlık, manisa çalışma izni, balıkesir ikamet izni, çanakkale yabancı danışmanlık, sarıbaş danışmanlık, ikamet izni uzmanı"
         canonicalUrl="https://saribasdanismanlik.com/hakkimizda"
       />
 
@@ -30,10 +30,10 @@ const AboutPage = () => {
             className="text-center"
           >
             <h1 className="text-4xl md:text-5xl font-bold mb-4">
-              Çanakkale ve Manisa Yabancı Danışmanlık Merkezi
+              İzmir, Manisa, Balıkesir & Çanakkale Yabancı Danışmanlık Merkezi
             </h1>
             <p className="text-xl text-gray-200 max-w-3xl mx-auto">
-              2017'den beri Göç İdaresi ve Çalışma İzni süreçlerinde yerel otorite
+              2017'den beri Göç İdaresi, İkamet ve Çalışma İzni süreçlerinde bölgesel otorite
             </p>
           </motion.div>
         </div>

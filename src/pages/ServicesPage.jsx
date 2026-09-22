@@ -23,7 +23,7 @@ const ServicesPage = () => {
     description: 'Yurtdışından Türkiye\'ye çalışma izni ile gelmek isteyen yabancıların çalışma izni süreçlerinde danışmanlık veriyoruz. Çanakkale ve Manisa başta olmak üzere diğer tüm şehirlerimize çalışma izni danışmanlığı vermekteyiz.'
   }];
   return <>
-      <SEOHead title="Çanakkale & Manisa İkamet ve Çalışma İzni Ofisi" description="Çanakkale ve Manisa'da Türk vatandaşı ile evlilik ikameti, bakıcı ve şirket personeli çalışma izni, Afgan ve Suriyeli çalışan izinleri ile yurt dışı çalışma danışmanlığı." keywords="çanakkale evlilik ikamet izni, hasta bakıcı çalışma izni, manisa otel çalışanı izni, afgan çoban çalışma izni, suriyeli çalışma izni çanakkale, yurt dışı çalışma izni" canonicalUrl="https://saribasdanismanlik.com/hizmetler" />
+      <SEOHead title="İzmir, Manisa, Balıkesir & Çanakkale İkamet ve Çalışma İzni Ofisi" description="İzmir, Manisa, Balıkesir ve Çanakkale'de Türk vatandaşı ile evlilik ikameti, bakıcı ve şirket personeli çalışma izni ile yurtdışından işçi getirme danışmanlığı." keywords="izmir çalışma izni, manisa ikamet izni, balıkesir yabancı danışmanlık, çanakkale evlilik ikameti, hasta bakıcı çalışma izni, afgan çoban çalışma izni, yurt dışı çalışma izni" canonicalUrl="https://saribasdanismanlik.com/hizmetler" />
 
       {/* Hero Section */}
       <section className="bg-gradient-to-r from-[#1e3a5f] to-[#2d5a8f] text-white py-16">
@@ -40,7 +40,7 @@ const ServicesPage = () => {
             <h1 className="text-4xl md:text-5xl font-bold mb-4">
               Profesyonel İkamet ve Çalışma İzni Danışmanlığı
             </h1>
-            <p className="text-xl text-gray-200 max-w-3xl mx-auto">2017'den beri Çanakkale ve Manisa'da göç idaresi izinleri, yabancı ile evlilik dosyalarından bakıcı çalışma izinlerine kadar her aşamada yanınızdayız.</p>
+            <p className="text-xl text-gray-200 max-w-3xl mx-auto">2017'den beri İzmir, Manisa, Balıkesir ve Çanakkale'de Göç İdaresi izinleri, yabancı evlilik dosyaları, şirket ve bakıcı çalışma izinlerinde yanınızdayız.</p>
           </motion.div>
         </div>
       </section>

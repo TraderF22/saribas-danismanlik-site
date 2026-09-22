@@ -34,9 +34,9 @@ const ContactPage = () => {
   return (
     <>
       <SEOHead
-        title="Çanakkale & Manisa İletişim | Sarıbaş Danışmanlık"
-        description="Çanakkale Kepez ve Manisa ofislerimizde göç danışmanlığı, ikamet izni ve çalışma izni süreçleriniz için profesyonel destek alın. Hemen randevu oluşturun."
-        keywords="çanakkale göç danışmanlığı, kepez yabancı danışmanlık, manisa ikamet izni iletişim, sarıbaş danışmanlık adres"
+        title="İzmir, Manisa, Balıkesir & Çanakkale İletişim | Sarıbaş Danışmanlık"
+        description="İzmir, Manisa, Balıkesir ve Çanakkale ofis hatlarımızla göç danışmanlığı, ikamet izni ve yabancı çalışma izni süreçleriniz için profesyonel destek alın. Hemen randevu oluşturun."
+        keywords="izmir yabancı danışmanlık, manisa ikamet izni iletişim, çanakkale göç danışmanlığı, balıkesir yabancı danışmanlık, sarıbaş danışmanlık adres"
         canonicalUrl="https://saribasdanismanlik.com/iletisim"
       />
 
@@ -51,7 +51,7 @@ const ContactPage = () => {
           >
             <h1 className="text-4xl md:text-5xl font-bold mb-4">Bizimle İletişime Geçin</h1>
             <p className="text-xl text-gray-200 max-w-3xl mx-auto">
-              Çanakkale (Kepez) ve Manisa ofislerimizde yüz yüze danışmanlık hizmeti sunuyoruz.
+              İzmir, Manisa, Balıkesir ve Çanakkale başta olmak üzere tüm bölgede yüz yüze ve online danışmanlık hizmeti sunuyoruz.
             </p>
           </motion.div>
         </div>
@@ -122,13 +122,13 @@ const ContactPage = () => {
               <h3 className="text-xl font-bold text-[#1e3a5f] mb-4">Bize Telefonla Ulaşın</h3>
               <div className="space-y-2">
                 <p className="text-gray-600 font-semibold">
-                  Çanakkale: <a href="tel:+905548743308" className="hover:text-blue-700 transition-colors">0554 874 3308</a>
+                  İzmir & Manisa: <a href="tel:+905419552375" className="hover:text-blue-700 transition-colors">0541 955 2375</a>
                 </p>
                 <p className="text-gray-600 font-semibold">
-                  Mobil: <a href="tel:+905053524803" className="hover:text-blue-700 transition-colors">0505 352 4803</a>
+                  Çanakkale & Balıkesir: <a href="tel:+905548743308" className="hover:text-blue-700 transition-colors">0554 874 3308</a>
                 </p>
                 <p className="text-gray-600 font-semibold">
-                  Manisa: <a href="tel:+905419552375" className="hover:text-blue-700 transition-colors">0541 955 2375</a>
+                  Mobil / WhatsApp: <a href="tel:+905053524803" className="hover:text-blue-700 transition-colors">0505 352 4803</a>
                 </p>
               </div>
             </motion.div>
